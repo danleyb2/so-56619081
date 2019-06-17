@@ -1,0 +1,12 @@
+<div>
+    <div class="container">
+        <h5>New comment</h5>
+
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <br>
+            <button class="btn" style="background-color:lightblue" type="submit">Submit Comment</button>
+        </form>
+    </div>
+</div>
